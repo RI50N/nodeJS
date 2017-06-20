@@ -1,16 +1,11 @@
-var express = require('express');
-var app = express();
+var app = require("./config/server");
 
-app.set('view engine','ejs');
+var rotahome = require('./app/routes/home')(app);
 
-app.get('/', function (req,res){
-  res.render("secao/tecnologia");
-});
+var rotaFormularioInclusaoNoticia = require('./app/routes/formulario_inclusao_noticia')(app);
 
-app.get('/tecnologia', function (req,res){
-  res.render("secao/tecnologia");
-});
+var rotaNoticias = require('./app/routes/noticias')(app);
 
 app.listen(3000, function(){
-  console.log("servidor");
+  console.log("Servidor ON");
 });
