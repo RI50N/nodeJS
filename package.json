@@ -1,0 +1,23 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "Aprendendo node",
+  "main": "noticias.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RI50N/nodeJS.git"
+  },
+  "author": "Adriano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RI50N/nodeJS/issues"
+  },
+  "homepage": "https://github.com/RI50N/nodeJS#readme",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.3"
+  }
+}
