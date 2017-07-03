@@ -7,11 +7,15 @@ NoticiasDAO.prototype.getNoticias = function(callback) {
 };
 
 NoticiasDAO.prototype.getNoticia = function(callback) {
-  this._connection.query('SELECT * FROM noticias WHERE id_noticia = 4', callback);
+  this._connection.query('SELECT * FROM noticias WHERE id_noticia = 16', callback);
 };
 
 NoticiasDAO.prototype.salvarNoticia = function(noticia, callback) {
   this._connection.query('INSERT INTO noticias SET ?', noticia, callback);
+};
+
+NoticiasDAO.prototype.get5UltimasNoticias = function(callback) {
+  this._connection.query('SELECT * FROM noticias LIMIT 5', callback);
 };
 
 module.exports = function() {
