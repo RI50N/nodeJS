@@ -4,6 +4,6 @@ module.exports = function(application) {
   });
 
   application.get('/noticia', function(req, res) {
-    application.app.controllers.noticias.detalhesNoticia(application, res);
+    application.app.controllers.noticias.detalhesNoticia(application, req, res);
   });
 }
