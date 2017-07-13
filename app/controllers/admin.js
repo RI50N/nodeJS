@@ -14,7 +14,7 @@ module.exports.noticias_salvar = function(application, req, res) {
   req.assert('data_noticia', 'Data é obrigatoria').notEmpty().isDate({
     format: 'YYYY-MM-DD'
   });
-  req.assert('noticia', 'Noticia é obrigatoria').notEmpty();;
+  req.assert('noticia', 'Noticia é obrigatoria').notEmpty();
 
 
   var erros = req.validationErrors();
